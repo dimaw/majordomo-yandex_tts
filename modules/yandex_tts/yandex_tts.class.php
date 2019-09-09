@@ -292,7 +292,7 @@ function usual(&$out) {
         if (!file_exists($cachedFileName))
         {
            $lang = SETTINGS_SITE_LANGUAGE_CODE;
-           $qs = http_build_query(array('format' => 'mp3', 'lang' => $lang, 'speaker' => $speaker, emotion => $emotion, 'key' => $accessKey, 'text' => $message));
+           $qs = http_build_query(array('format' => 'mp3', 'lang' => $lang, 'speaker' => $speaker, 'emotion' => $emotion, 'key' => $accessKey, 'text' => $message));
            try
            {
               $contents = file_get_contents($base_url . $qs);
